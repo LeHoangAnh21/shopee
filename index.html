@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 		<link rel="stylesheet" href="css/base.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/responsive.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -17,8 +19,8 @@
 	<body>
 		<div class="app">
 			<div class="header">
-				<div class="grid">
-					<div class="navbar">
+				<div class="grid wide">
+					<div class="navbar hide-on-tablet-mobile">
 						<ul class="navbar__list">
 							<li class="navbar__item navbar__item--qrcode navbar__item--separate">
 								Vào cửa hàng trên ứng dụng TickID
@@ -131,7 +133,7 @@
 					</div>
 
 					<div class="header-with-search">
-						<div class="header__logo">
+						<div class="header__logo hide-on-tablet">
 							<a href="" class="header__logo-item-link">
 								<svg viewBox="0 0 192 65" class="header__logo-img">
 									<g fill-rule="evenodd">
@@ -195,7 +197,7 @@
 											<img src="photo/cat5.jpg" alt="" class="header__cart-product-img">
 											<div class="header__cart-product-describe">
 												<div class="header__cart-product-infor">
-													<h5 class="header__cart-product-notice">Mèo Anh lông ngắn xám aaa aaaa aaa aaa aaaaaaa aaaaaaa aaaaa aaaaa aaaaaaaaa</h5>
+													<h5 class="header__cart-product-notice">Mèo Anh lông ngắn xám</h5>
 													<div class="header__cart-product-price-wrap">
 														<span class="header__cart-product-price">1.333.000đ</span>
 														<span class="header__cart-product-multiply">x</span>
@@ -393,7 +395,7 @@
 			<!-- Hoàn thành 23/05/2021 -->
 
 			<nav class="container">
-				<div class="grid">
+				<div class="grid wide">
 					<div class="grid__row container__shorter">
 						
 						<div class="grid__column-2">
@@ -429,7 +431,7 @@
 						</div>
 
 						<div class="grid__column-10">
-							<div class="home__filter">
+							<div class="home__filter hide-on-tablet-mobile">
 								<span class="home__filter-lable">Sắp xếp theo</span>
 								<button class="btn home__filter-button">Phổ Biến</button>
 								<button class="btn btn--primary home__filter-button">Mới Nhất</button>
@@ -1369,7 +1371,7 @@
 
 			<!-- Footer -->
 			<div class="footer">
-				<div class="grid">
+				<div class="grid wide">
 					<div class="footer_info">
 						<div class="footer_info-item">
 							<div class="footer_info-item-header">

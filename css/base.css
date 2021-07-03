@@ -17,16 +17,6 @@ html{
 }
 
 /* Responsive */
-.grid{
-	max-width: 100%;
-	width: 1200px;
-	margin: 0 auto;
-}
-
-.gri__full-width{
-	width: 100%;
-}
-
 .grid__row{
 	display: flex;
 	flex-wrap: wrap;
