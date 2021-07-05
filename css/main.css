@@ -7,6 +7,10 @@ body{
 	background-color: #f5f5f5
 }
 
+body::-webkit-scrollbar{
+	display: none;
+}
+
 /* NAVBAR */
 .navbar{
 	display: flex;
@@ -450,6 +454,25 @@ body{
 	padding-left: 10px;
 }
 
+.header_icon{
+	display: flex;
+}
+
+.header__search-icon{
+	font-size: 2.2rem;
+	color: var(--white-color);
+	width: 45px;
+	text-align: center;
+	display: none;
+}
+
+.header__option-icon{
+	font-size: 2.2rem;
+	color: var(--white-color);
+	width: 45px;
+	text-align: center;
+}
+
 .header__logo{
 	width: 200px;
 }
@@ -558,6 +581,46 @@ body{
 	display: block;
 	top: -15px;
 	right: 0;
+}
+
+/* Option on tablet and mobile */
+.header__sort-bar{
+	display: none;
+	height: 45px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-top: 1px solid #D3D3D3;
+	border-bottom: 1px solid #D3D3D3;
+	background-color: var(--white-color);
+}
+
+.header__sort-item{
+	width: 25%;
+	text-align: center;
+	position: relative;
+}
+
+.header__sort-link{
+	text-decoration: none;
+	line-height: 45px;
+	font-size: 1.4rem;
+	color: black;
+	font-weight: bold;
+}
+
+.header__sort-link::before{
+	position: absolute;
+	content: "";
+	top: 50%;
+	height: 60%;
+	left: 0;
+	border-left: 1px solid #D3D3D3;
+	transform: translateY(-50%);
+}
+
+.header__sort-link-active{
+	color: var(--color-primary);
 }
 
 /* List product */
@@ -786,6 +849,74 @@ body{
 .header__search-selection:hover .header__search-option{
 	display: block;
 }
+
+.header__search-checkbox:checked ~ .header__search{
+	display: flex;
+}
+
+/* .header__option-checkbox:checked ~ .product__list{
+	display: block;
+	opacity: 1;
+}
+
+.product__list{
+	display: none;
+	position: fixed;
+	padding: 0;
+	list-style: none;
+	background-color: #fff;
+	width: 220px;
+	top: 0px;
+	left: 0;
+	bottom: 0;
+	z-index: 10;
+	font-size: 1.2rem;
+	padding-top: 20px;
+	animation: fadeIna linear 3s;
+	transform: translateX(0%);
+	opacity: 0;
+}
+
+@keyframes fadeIna{
+	from{
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0%);
+	}
+} */
+
+.container__list-product{
+	list-style: none;
+	padding: 0;
+}
+
+.container__category-header-danh{
+	font-size: 1.8rem;
+	font-weight: bolder;
+	margin: 10px;
+}
+
+.header__option-icon{
+	display: none;
+}
+
+/* .product__list{
+	display: none;
+} */
+
+/* .nav-overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.4);
+	display: none;
+    animation: fadeIn linear 0.3s;
+} */
 
 .header__search-option-item{
 	background-color: var(--white-color);
@@ -1034,6 +1165,55 @@ body{
 	border-right: 1.5px solid #ededed;
 }
 
+/* Mobile category  */
+.category__list-mobile{
+	display: none;
+}
+
+.category__list{
+	list-style: none;
+	display: flex;
+	padding: 0;
+	max-width: 100%;
+	overflow-x: auto;
+	
+}
+
+.category__list-item:nth-of-type(3n+1) .category__list-link{
+	background-color: #87AFD8;
+}
+
+.category__list-item:nth-of-type(3n+2) .category__list-link{
+	background-color: #76C9BD;
+}
+
+.category__list-item:nth-of-type(3n+3) .category__list-link{
+	background-color: #88CF81;
+}
+
+.category__list-item{
+	flex-shrink: 0;
+	margin-left: 10px;
+	
+}
+
+.category__list::-webkit-scrollbar{
+	display: none;
+}
+
+.category__list-link{
+	text-decoration: none;
+	font-size: 1.3rem;
+	line-height: 2rem;
+	width: 110px;
+	height: 4rem;
+	display: block;
+	text-align: center;
+	border-radius: 5px;
+	color: var(--white-color);
+	
+}
+
 
 /* List Product */
 .home__product{
@@ -1067,7 +1247,7 @@ body{
 
 .freeship-img{
 	position: absolute;
-	top: 164.5px;
+	top: 47%;
 	width: 115px;
 	height: 25px;
 }
@@ -1231,6 +1411,7 @@ body{
 	list-style: none;
 	margin: 40px 0 60px;
 	justify-content: center;
+	padding: 0;
 }
 
 .pagination_page{
@@ -1263,6 +1444,7 @@ body{
 /* footer */
 .footer{
 	border-top: 5px solid #ee4d2d;
+	padding-left: 10px;
 }
 
 .footer_info{
@@ -1270,6 +1452,7 @@ body{
 	border-top: 1px solid #dfdfdf;
 	border-bottom: 1px solid #dfdfdf;
 	display: flex;
+	
 }
 
 .footer_info-item{
@@ -1467,8 +1650,8 @@ body{
 }
 
 .footer_info-item-img{
-	width: 90px;
-	height: 20px;
+	width: 105px;
+	height: 22px;
 }
 
 /* license */

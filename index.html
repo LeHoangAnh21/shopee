@@ -18,7 +18,7 @@
 	</head>
 	<body>
 		<div class="app">
-			<div class="header">
+			<header class="header">
 				<div class="grid wide">
 					<div class="navbar hide-on-tablet-mobile">
 						<ul class="navbar__list">
@@ -132,7 +132,48 @@
 						</ul>
 					</div>
 
+					
+
 					<div class="header-with-search">
+						<div class="header_icon">
+							
+							<!-- <label for="mobile-option" class="header__option-icon">
+								<i class="fas fa-bars"></i>
+							</label> -->
+							<label for="mobile-checkbox" class="header__search-icon">
+								<i class="fas fa-search"></i>
+							</label>
+
+							<!-- <label for="turn-off" class="nav-overlay"></label> -->
+
+							<!-- <div class="product__list">
+								<span class="container__category-header-danh">Danh Mục</span>
+								<ul class="container__list-product">
+									<li class="container__category-list-item">
+										<a href="" class="container__category-item-link">Tất Cả Sản Phẩm</a>
+									</li>
+									<li class="container__category-list-item">
+										<a href="" class="container__category-item-link">💙 BÁN CHẠY</a>
+									</li>
+									<li class="container__category-list-item">
+										<a href="" class="container__category-item-link">😝 HÀNG MỚI VỀ</a>
+									</li>
+									<li class="container__category-list-item">
+										<a href="" class="container__category-item-link">🔴ULTRABOOST - CHẠY BỘ</a>
+									</li>
+									<li class="container__category-list-item">
+										<a href="" class="container__category-item-link">💙 ADIDAS 💙</a>
+									</li>
+									<li class="container__category-list-item">
+										<a href="" class="container__category-item-link">🔴 NIKE 🔴</a>
+									</li>
+									<li class="container__category-list-item">
+										<a href="" class="container__category-item-link">😝 HOÀNG ANH ARSPER</a>
+									</li>
+								</ul>
+							</div> -->
+						</div>
+
 						<div class="header__logo hide-on-tablet">
 							<a href="" class="header__logo-item-link">
 								<svg viewBox="0 0 192 65" class="header__logo-img">
@@ -144,7 +185,10 @@
 							</a>
 						</div>
 
-						<div class="header__search">
+						<!-- <input type="checkbox"   id="mobile-option" class="header__option-checkbox"> -->
+						<input type="checkbox" hidden  id="mobile-checkbox" class="header__search-checkbox">
+						
+						<div class="header__search ">
 							<div class="header__search-input-wrap">
 								<input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
 								
@@ -277,57 +321,6 @@
 												</div>	
 											</div>
 										</li>
-
-										<li class="header__cart-product-list">
-											<img src="photo/cat4.jpg" alt="" class="header__cart-product-img">
-											<div class="header__cart-product-describe">
-												<div class="header__cart-product-infor">
-													<h5 class="header__cart-product-notice">Mèo Ngu lông dở hơi</h5>
-													<div class="header__cart-product-price-wrap">
-														<span class="header__cart-product-price">700.000đ</span>
-														<span class="header__cart-product-multiply">x</span>
-														<span class="header__cart-product-number">5</span>
-													</div>
-												</div>
-												<div class="header__cart-product-body">
-													<span class="header__cart-product-delete">Xóa</span>
-												</div>	
-											</div>
-										</li>
-
-										<li class="header__cart-product-list">
-											<img src="photo/cat4.jpg" alt="" class="header__cart-product-img">
-											<div class="header__cart-product-describe">
-												<div class="header__cart-product-infor">
-													<h5 class="header__cart-product-notice">Mèo Ngu lông dở hơi</h5>
-													<div class="header__cart-product-price-wrap">
-														<span class="header__cart-product-price">700.000đ</span>
-														<span class="header__cart-product-multiply">x</span>
-														<span class="header__cart-product-number">5</span>
-													</div>
-												</div>
-												<div class="header__cart-product-body">
-													<span class="header__cart-product-delete">Xóa</span>
-												</div>	
-											</div>
-										</li>
-
-										<li class="header__cart-product-list">
-											<img src="photo/cat4.jpg" alt="" class="header__cart-product-img">
-											<div class="header__cart-product-describe">
-												<div class="header__cart-product-infor">
-													<h5 class="header__cart-product-notice">Mèo Ngu lông dở hơi</h5>
-													<div class="header__cart-product-price-wrap">
-														<span class="header__cart-product-price">700.000đ</span>
-														<span class="header__cart-product-multiply">x</span>
-														<span class="header__cart-product-number">5</span>
-													</div>
-												</div>
-												<div class="header__cart-product-body">
-													<span class="header__cart-product-delete">Xóa</span>
-												</div>	
-											</div>
-										</li>
 									</ul>
 									<a href="" class="btn btn--primary header__cart-list-watch">Xem Giỏ Hàng</a>
 								</div>
@@ -335,7 +328,24 @@
 						</div>
 					</div>
 				</div>
-			</div>
+
+				<ul class="header__sort-bar">
+					<li class="header__sort-item">
+						<a href="" class="header__sort-link">Liên quan</a>
+					</li>
+					<li class="header__sort-item">
+						<a href="" class="header__sort-link header__sort-link-active">Mới nhất</a>
+					</li>
+					<li class="header__sort-item">
+						<a href="" class="header__sort-link">Bán chạy</a>
+					</li>
+					<li class="header__sort-item">
+						<a href="" class="header__sort-link">Giá</a>
+					</li>
+				</ul>
+			</header>
+
+
 
 			<!-- Modal -->
 			<!-- <div class="modal">
@@ -396,9 +406,9 @@
 
 			<nav class="container">
 				<div class="grid wide">
-					<div class="grid__row container__shorter">
+					<div class="row sm-gutter container__shorter">
 						
-						<div class="grid__column-2">
+						<div class="col l-2 m-0 c-0">
 							<div class="container__category">
 								<div class="container__category-header">
 									<i class="container__category-header-logo fas fa-list"></i>
@@ -430,7 +440,7 @@
 							</div>
 						</div>
 
-						<div class="grid__column-10">
+						<div class="col l-10 m-12 c-12">
 							<div class="home__filter hide-on-tablet-mobile">
 								<span class="home__filter-lable">Sắp xếp theo</span>
 								<button class="btn home__filter-button">Phổ Biến</button>
@@ -467,10 +477,42 @@
 								</div>
 							</div>
 
+							<nav class="category__list-mobile">
+								<ul class="category__list">
+									<li class="category__list-item">
+										<a href="#" class="category__list-link">Thể thao & dã ngoại</a>
+									</li>
+									<li class="category__list-item">
+										<a href="#" class="category__list-link">Giày thể thao / Sneakers</a>
+									</li>
+									<li class="category__list-item">
+										<a href="#" class="category__list-link">Thời trang trẻ em</a>
+									</li>
+									<li class="category__list-item">
+										<a href="#" class="category__list-link">Giày cao gót</a>
+									</li>
+									<li class="category__list-item">
+										<a href="#" class="category__list-link">Giày đế bằng</a>
+									</li>
+									<li class="category__list-item">
+										<a href="#" class="category__list-link">Giày bata</a>
+									</li>
+									<li class="category__list-item">
+										<a href="#" class="category__list-link">Thể thao Nike</a>
+									</li>
+									<li class="category__list-item">
+										<a href="#" class="category__list-link">Thể thao adidas</a>
+									</li>
+									<li class="category__list-item">
+										<a href="#" class="category__list-link">Thể thao Puma</a>
+									</li>
+								</ul>
+							</nav>
+
 							<div class="home__product">
-								<div class="grid__row">
+								<div class="row sm-gutter">
 									<!-- item -->
-									<div class="grid__column-2-4">
+									<div class="col l-2-4 m-4 c-6">
 										<a class="home__product-item" href="">
 											<div class="home__product-item-img" style="background-image: url(https://vinagiaydep.com/wp-content/uploads/2020/10/z2105989768319_1c6e58c022634aaef0803a213fe50cbe.jpg);">
 												<img class="freeship-img" src="photo/sp1.png" alt="">
@@ -523,7 +565,7 @@
 										</a>
 									</div>
 
-									<div class="grid__column-2-4">
+									<div class="col l-2-4 m-4 c-6">
 										<a class="home__product-item" href="">
 											<div class="home__product-item-img" style="background-image: url(http://bizweb.dktcdn.net/thumb/grande/100/363/576/products/5-2-copy-opt.png?v=1597827679510);">
 												<img class="freeship-img" src="photo/sp1.png" alt="">
@@ -580,7 +622,7 @@
 										</a>
 									</div>
 
-									<div class="grid__column-2-4">
+									<div class="col l-2-4 m-4 c-6">
 										<a class="home__product-item" href="">
 											<div class="home__product-item-img" style="background-image: url(https://vn-test-11.slatic.net/p/376e248aa4ccbfbdb45a2b0c8a2179a9.jpg);">
 												<img class="freeship-img" src="photo/sp1.png" alt="">
@@ -638,7 +680,7 @@
 										</a>
 									</div>
 
-									<div class="grid__column-2-4">
+									<div class="col l-2-4 m-4 c-6">
 										<a class="home__product-item" href="">
 											<div class="home__product-item-img" style="background-image: url(https://salt.tikicdn.com/ts/product/2c/04/80/3e01a5698f9ac86fb195dffb55932120.jpg);">
 												<img class="freeship-img" src="photo/sp1.png" alt="">
@@ -696,7 +738,7 @@
 										</a>
 									</div>
 
-									<div class="grid__column-2-4">
+									<div class="col l-2-4 m-4 c-6">
 										<a class="home__product-item" href="">
 											<div class="home__product-item-img" style="background-image: url(https://cf.shopee.vn/file/9649a515a4dfbd97d578da7029a0fe77);">
 												<img class="freeship-img" src="photo/sp1.png" alt="">
@@ -754,7 +796,7 @@
 										</a>
 									</div>
 
-									<div class="grid__column-2-4">
+									<div class="col l-2-4 m-4 c-6">
 										<a class="home__product-item" href="">
 											<div class="home__product-item-img" style="background-image: url(https://cf.shopee.vn/file/58aa7f16af7872fd3a7946474027fa8f);">
 												<img class="freeship-img" src="photo/sp1.png" alt="">
@@ -812,7 +854,7 @@
 										</a>
 									</div>
 
-									<div class="grid__column-2-4">
+									<div class="col l-2-4 m-4 c-6">
 										<a class="home__product-item" href="">
 											<div class="home__product-item-img" style="background-image: url(https://cf.shopee.vn/file/f35784814f165a8ed61a29affa4dc372);">
 												<img class="freeship-img" src="photo/sp1.png" alt="">
@@ -870,7 +912,7 @@
 										</a>
 									</div>
 
-									<div class="grid__column-2-4">
+									<div class="col l-2-4 m-4 c-6">
 										<a class="home__product-item" href="">
 											<div class="home__product-item-img" style="background-image: url(https://menback.com/wp-content/uploads/2020/11/xu-huong-sneaker-2021.jpg);">
 												<img class="freeship-img" src="photo/sp1.png" alt="">
@@ -928,7 +970,7 @@
 										</a>
 									</div>
 
-									<div class="grid__column-2-4">
+									<div class="col l-2-4 m-4 c-6">
 										<a class="home__product-item" href="">
 											<div class="home__product-item-img" style="background-image: url(https://cf.shopee.vn/file/8b32e34baa40dedc18d626b10125ddb7);">
 												<img class="freeship-img" src="photo/sp1.png" alt="">
@@ -986,7 +1028,7 @@
 										</a>
 									</div>
 
-									<div class="grid__column-2-4">
+									<div class="col l-2-4 m-4 c-6">
 										<a class="home__product-item" href="">
 											<div class="home__product-item-img" style="background-image: url(https://vn-test-11.slatic.net/p/51e64281f3a7580dfd5eb6ecbf5af002.jpg);">
 												<img class="freeship-img" src="photo/sp1.png" alt="">
@@ -1044,7 +1086,7 @@
 										</a>
 									</div>
 
-									<div class="grid__column-2-4">
+									<div class="col l-2-4 m-4 c-6">
 										<a class="home__product-item" href="">
 											<div class="home__product-item-img" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpCW6CRkknBhmr8AbqYjwYcVe8rjyy-OOdGQak5IUR81WzL5SfJIORE9JL6Q&usqp=CAc);">
 												<img class="freeship-img" src="photo/sp1.png" alt="">
@@ -1101,7 +1143,7 @@
 										</a>
 									</div>
 
-									<div class="grid__column-2-4">
+									<div class="col l-2-4 m-4 c-6">
 										<a class="home__product-item" href="">
 											<div class="home__product-item-img" style="background-image: url(https://cf.shopee.vn/file/cc1bc897f271221708903b9e18f8fdb5);">
 												<img class="freeship-img" src="photo/sp1.png" alt="">
@@ -1153,7 +1195,7 @@
 										</a>
 									</div>
 
-									<div class="grid__column-2-4">
+									<div class="col l-2-4 m-4 c-6">
 										<a class="home__product-item" href="">
 											<div class="home__product-item-img" style="background-image: url(https://bizweb.dktcdn.net/100/289/867/files/fila-heritage-disruptor-ii-white-2.jpg?v=1533143280331);">
 												<img class="freeship-img" src="photo/sp1.png" alt="">
@@ -1211,7 +1253,7 @@
 										</a>
 									</div>
 
-									<div class="grid__column-2-4">
+									<div class="col l-2-4 m-4 c-6">
 										<a class="home__product-item" href="">
 											<div class="home__product-item-img" style="background-image: url(https://cf.shopee.vn/file/8848c72974a61c50e7e0de72ca28ae7f);">
 												<img class="freeship-img" src="photo/sp1.png" alt="">
@@ -1269,7 +1311,7 @@
 										</a>
 									</div>
 
-									<div class="grid__column-2-4">
+									<div class="col l-2-4 m-4 c-6">
 										<a class="home__product-item" href="">
 											<div class="home__product-item-img" style="background-image: url(https://image.yes24.vn/Upload/ProductImage/GmarketAcc/1873608_L.png);">
 												<img class="freeship-img" src="photo/sp1.png" alt="">
@@ -1372,8 +1414,8 @@
 			<!-- Footer -->
 			<div class="footer">
 				<div class="grid wide">
-					<div class="footer_info">
-						<div class="footer_info-item">
+					<div class="footer_info row">
+						<div class="footer_info-item col l-2-4 m-4 c-6">
 							<div class="footer_info-item-header">
 								<h4>CHĂM SÓC KHÁCH HÀNG</h4>
 							</div>
@@ -1414,7 +1456,7 @@
 							</ul>
 						</div>
 						
-						<div class="footer_info-item">
+						<div class="footer_info-item col l-2-4 m-4 c-6">
 							<div class="footer_info-item-header">
 								<h4>VỀ SHOPEE</h4>
 							</div>
@@ -1449,7 +1491,7 @@
 							</ul>
 						</div>
 
-						<div class="footer_info-item">
+						<div class="footer_info-item col l-2-4 m-4 c-6">
 							<div class="footer_info-item-header">
 								<h4>THANH TOÁN</h4>
 							</div>
@@ -1514,7 +1556,7 @@
 							</ul>
 						</div>
 
-						<div class="footer_info-item">
+						<div class="footer_info-item col l-2-4 m-4 c-6">
 							<div class="footer_info-item-header">
 								<h4>THEO DÕI CHÚNG TÔI TRÊN</h4>
 							</div>
@@ -1540,7 +1582,7 @@
 							</ul>
 						</div>
 
-						<div class="footer_info-item">
+						<div class="footer_info-item col l-2-4 m-6 c-8">
 							<div class="footer_info-item-header">
 								<h4>TẢI ỨNG DỤNG SHOPEE NGAY THÔI</h4>
 							</div>
