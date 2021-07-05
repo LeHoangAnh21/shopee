@@ -135,4 +135,15 @@
 	.category__list-mobile{
 		display: block;
 	}
+
+	
+	.footer_info-item{
+		text-align: center;
+	}
+
+	.footer_info-item-app{
+		flex: unset;
+	}
+
+
 }
